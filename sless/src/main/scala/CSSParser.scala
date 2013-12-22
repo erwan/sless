@@ -2,7 +2,7 @@ package sless
 
 import util.parsing.combinator._
 
-import models._
+import ast._
 
 // TODO: Attributes
 // TODO: CSS Transforms

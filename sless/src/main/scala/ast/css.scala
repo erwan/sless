@@ -1,4 +1,4 @@
-package models
+package ast
 
 case class ComponentValue(value: String)
 
@@ -17,7 +17,7 @@ case class Import(value: String) {
   def genCSS: String = s"""@import "$value" """
 }
 
-sealed trait Rule {
+trait Rule {
   def genCSS: String
 }
 
